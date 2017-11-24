@@ -21,3 +21,13 @@ get_last_elem_in_list(X,[Head|Tail]):-Tail=[],X=Head,!;get_last_elem_in_list(X,T
 /*Count elements in a list*/
 size_of_list(0,[]).
 size_of_list(X,[Head|Tail]):-size_of_list(Y,Tail),X is Y+1.
+
+
+/*reverse_list reverse_list([1,2,3,4],L).*/
+reverse_list([X],[X]).
+reverse_list([Head|Tail],M):-reverse_list(Tail,L),concat_list(L,[Head],M).
+
+
+/*concat list*/
+concat_list([],Y,Y).
+concat_list([Head|Tail],Y,[Head|Z]):-concat_list(Tail,Y,Z).
