@@ -17,5 +17,7 @@ A lot of things need to be implemented yet:
 - screen layout
 - instead of manually typing I would rather limit the allowed values
 - fulltext search
+- input data validation
+- input cancelling
 
 Program implemented in Turbo Prolog 2.0.
